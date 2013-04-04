@@ -1,0 +1,20 @@
+========== HTTP Client ==========
+
+To make a client use:
+	$ make
+
+To run client 
+	$ ./client hostname port
+
+Note: Client is using HTTP 1.0 version of HTTP protocol
+most of the servers how use HTTP 1.1 and they mostly don't use 
+Content-Length header
+
+Test cases:
+	$ ./client www.w3.org 80
+	$ ./client web.cs.wpi.edu/~kven/courses/cs3516-d13/project1.html 80
+
+To determin RTT(microseconds) use
+	$ ./client -p www.w3.org 80
+	$ ./client -p web.cs.wpi.edu/~kven/courses/cs3516-d13/project1.html 80
+
